@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="个人博客系统插图">
+  <defs>
+    <linearGradient id="p2g" gradientUnits="userSpaceOnUse" x1="220" y1="100" x2="580" y2="420">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="#0e1628"/>
+  <circle cx="110" cy="80" r="150" fill="url(#p2g)" opacity=".10"/>
+  <circle cx="700" cy="430" r="150" fill="url(#p2g)" opacity=".08"/>
+
+  <!-- 浏览器窗口 -->
+  <rect x="220" y="100" width="360" height="300" rx="16" fill="#152238" stroke="#263650"/>
+  <path d="M220 116a16 16 0 0 1 16-16h328a16 16 0 0 1 16 16v28H220z" fill="#1d2c47"/>
+  <circle cx="250" cy="122" r="7" fill="#ef4444"/>
+  <circle cx="278" cy="122" r="7" fill="#f59e0b"/>
+  <circle cx="306" cy="122" r="7" fill="#22c55e"/>
+
+  <!-- 文章内容 -->
+  <rect x="260" y="170" width="200" height="16" rx="8" fill="url(#p2g)"/>
+  <rect x="260" y="204" width="280" height="10" rx="5" fill="#3b4a63"/>
+  <rect x="260" y="228" width="260" height="10" rx="5" fill="#33455f"/>
+  <rect x="260" y="252" width="272" height="10" rx="5" fill="#33455f"/>
+  <rect x="260" y="276" width="180" height="10" rx="5" fill="#33455f"/>
+  <rect x="260" y="312" width="120" height="12" rx="6" fill="url(#p2g)" opacity=".55"/>
+  <rect x="392" y="312" width="96" height="12" rx="6" fill="#2c3b55"/>
+
+  <!-- 写作徽章 -->
+  <circle cx="580" cy="372" r="36" fill="#0e1628" stroke="url(#p2g)" stroke-width="3"/>
+  <path d="m568 382 3-9 16-16a5 5 0 0 1 7 7l-16 16-9 3z" fill="none" stroke="#a78bfa" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

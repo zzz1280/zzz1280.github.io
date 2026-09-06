@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="智能任务管理工具插图">
+  <defs>
+    <linearGradient id="p1g" gradientUnits="userSpaceOnUse" x1="240" y1="90" x2="560" y2="410">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="#0e1628"/>
+  <circle cx="690" cy="70" r="170" fill="url(#p1g)" opacity=".10"/>
+  <circle cx="70" cy="450" r="140" fill="url(#p1g)" opacity=".08"/>
+
+  <!-- 任务卡片 -->
+  <rect x="240" y="90" width="320" height="320" rx="20" fill="#152238" stroke="#263650"/>
+  <path d="M240 110a20 20 0 0 1 20-20h280a20 20 0 0 1 20 20v44H240z" fill="url(#p1g)"/>
+  <rect x="270" y="116" width="130" height="14" rx="7" fill="#ffffff" opacity=".9"/>
+
+  <!-- 任务行 1（已完成） -->
+  <rect x="272" y="184" width="32" height="32" rx="9" fill="url(#p1g)"/>
+  <path d="m281 200 6 6 11-12" stroke="#ffffff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="320" y="190" width="160" height="11" rx="5.5" fill="#47597a"/>
+  <rect x="320" y="207" width="104" height="8" rx="4" fill="#2c3b55"/>
+
+  <!-- 任务行 2 -->
+  <rect x="272" y="254" width="32" height="32" rx="9" fill="none" stroke="#3b4a63" stroke-width="2.5"/>
+  <rect x="320" y="260" width="184" height="11" rx="5.5" fill="#47597a"/>
+  <rect x="320" y="277" width="120" height="8" rx="4" fill="#2c3b55"/>
+
+  <!-- 任务行 3 -->
+  <rect x="272" y="324" width="32" height="32" rx="9" fill="none" stroke="#3b4a63" stroke-width="2.5"/>
+  <rect x="320" y="330" width="140" height="11" rx="5.5" fill="#47597a"/>
+  <rect x="320" y="347" width="88" height="8" rx="4" fill="#2c3b55"/>
+
+  <!-- AI 徽章 -->
+  <circle cx="560" cy="366" r="38" fill="#0e1628" stroke="url(#p1g)" stroke-width="3"/>
+  <text x="560" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#22d3ee">AI</text>
+</svg>

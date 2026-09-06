@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>张伟 Alex Zhang · 全栈开发工程师 | 个人主页</title>
+
+  <!-- ===== SEO 基础优化（✏️ 部署前请把 zzz1280 全部替换为你的 GitHub 用户名） ===== -->
+  <meta name="description" content="张伟（Alex Zhang）的个人主页：全栈开发工程师，5 年 Web 开发经验，专注于构建高性能、用户友好的应用程序。" />
+  <meta name="author" content="张伟 (Alex Zhang)" />
+  <meta name="keywords" content="全栈开发工程师, 前端开发, 后端开发, React, Node.js, Python, 个人主页" />
+  <link rel="canonical" href="https://zzz1280.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="张伟 Alex Zhang · 全栈开发工程师" />
+  <meta property="og:description" content="5 年 Web 开发经验，专注于构建高性能、用户友好的应用程序。" />
+  <meta property="og:url" content="https://zzz1280.github.io/" />
+  <meta property="og:image" content="assets/avatar.svg" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- JS 可用时才启用“进入视口浮现”动画，避免无 JS 环境下内容被隐藏 -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- 无障碍：跳过导航直达正文 -->
+  <a class="skip-link" href="#main">跳转到主要内容</a>
+
+  <!-- ==================== 导航栏 ==================== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="主导航">
+      <a class="nav__logo" href="#home">Alex<span>.dev</span></a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link active" href="#home">首页</a></li>
+        <li><a class="nav__link" href="#about">关于我</a></li>
+        <li><a class="nav__link" href="#skills">技能</a></li>
+        <li><a class="nav__link" href="#projects">项目作品</a></li>
+        <li><a class="nav__link" href="#contact">联系我</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="nav-toggle" type="button"
+              aria-label="打开菜单" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ==================== Hero 首屏 ==================== -->
+    <section id="home" class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="hero__dots"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <p class="hero__greeting">👋 你好，我是</p>
+        <h1 class="hero__title">张伟 <span class="hero__name-en">Alex Zhang</span></h1>
+        <p class="hero__tagline">
+          我是 <span id="typing">全栈开发工程师</span><span class="typing-cursor" aria-hidden="true">|</span>
+        </p>
+        <p class="hero__desc">
+          热爱用技术解决实际问题，拥有 <strong>5 年</strong> Web 开发经验，
+          专注于构建高性能、用户友好的应用程序。
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">
+            查看我的作品
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#contact">联系我</a>
+        </div>
+
+        <!-- ✏️ 替换：把下面的链接换成你的真实社交主页 -->
+        <div class="hero__socials">
+          <a class="social-link" href="https://github.com/zzz1280" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/zzz1280" target="_blank" rel="noopener noreferrer" aria-label="领英">
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+          </a>
+          <a class="social-link" href="https://twitter.com/zzz1280" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg>
+          </a>
+          <a class="social-link" href="mailto:alex.zhang@example.com" aria-label="发送邮件">
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="向下滚动查看更多">
+        <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>
+      </a>
+    </section>
+
+    <!-- ==================== 关于我 ==================== -->
+    <section id="about" class="section section--alt">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__subtitle">About Me</p>
+          <h2 class="section__title">关于我</h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__avatar reveal">
+            <!-- ✏️ 替换：将 assets/avatar.svg 换成你的真实照片（如 assets/avatar.jpg），并同步修改 src 与 alt -->
+            <img src="assets/avatar.svg" alt="张伟的个人头像" width="280" height="280" />
+          </div>
+
+          <div class="about__content reveal" style="transition-delay:.12s">
+            <h3>用代码把想法变成现实 👨‍💻</h3>
+            <p>
+              我是张伟，一名全栈开发工程师。热爱用技术解决实际问题，拥有 5 年 Web 开发经验，
+              先后在互联网公司与创业团队负责核心业务系统的设计与开发。
+            </p>
+            <p>
+              我始终相信：好的产品源于对细节的打磨。从数据库设计到交互体验，
+              我追求高性能与可维护性，更追求让每一位用户都觉得「好用」的应用程序。
+            </p>
+
+            <ul class="about__facts">
+              <li><strong>📍 所在地</strong><span>中国 · 上海（✏️ 请替换）</span></li>
+              <li><strong>💼 职位</strong><span>全栈开发工程师</span></li>
+              <li><strong>🎓 教育背景</strong><span>计算机科学与技术（✏️ 请替换）</span></li>
+              <li><strong>📮 邮箱</strong><span>alex.zhang@example.com（✏️ 请替换）</span></li>
+            </ul>
+
+            <div class="about__stats">
+              <div class="stat">
+                <span class="stat__num" data-count="5" data-suffix="">0</span>
+                <span class="stat__label">年开发经验</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num" data-count="30" data-suffix="+">0</span>
+                <span class="stat__label">交付项目</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num" data-count="10" data-suffix="+">0</span>
+                <span class="stat__label">开源贡献</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 技能展示 ==================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__subtitle">My Skills</p>
+          <h2 class="section__title">技能展示</h2>
+        </header>
+
+        <div class="skills__grid">
+          <!-- ✏️ 替换：修改技能名称与熟练度（--level 为百分比，需与 pct 文本一致） -->
+          <div class="skill-card reveal">
+            <div class="skill-card__head"><span>React / 前端开发</span><span class="skill-card__pct">90%</span></div>
+            <div class="skill-card__bar"><span class="skill-card__fill" style="--level:90%"></span></div>
+          </div>
+          <div class="skill-card reveal" style="transition-delay:.08s">
+            <div class="skill-card__head"><span>Node.js / 后端开发</span><span class="skill-card__pct">85%</span></div>
+            <div class="skill-card__bar"><span class="skill-card__fill" style="--level:85%"></span></div>
+          </div>
+          <div class="skill-card reveal" style="transition-delay:.16s">
+            <div class="skill-card__head"><span>Python</span><span class="skill-card__pct">80%</span></div>
+            <div class="skill-card__bar"><span class="skill-card__fill" style="--level:80%"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__head"><span>Docker / 容器化</span><span class="skill-card__pct">75%</span></div>
+            <div class="skill-card__bar"><span class="skill-card__fill" style="--level:75%"></span></div>
+          </div>
+          <div class="skill-card reveal" style="transition-delay:.08s">
+            <div class="skill-card__head"><span>AWS / 云服务</span><span class="skill-card__pct">70%</span></div>
+            <div class="skill-card__bar"><span class="skill-card__fill" style="--level:70%"></span></div>
+          </div>
+          <div class="skill-card reveal" style="transition-delay:.16s">
+            <div class="skill-card__head"><span>数据库设计（MySQL / MongoDB）</span><span class="skill-card__pct">82%</span></div>
+            <div class="skill-card__bar"><span class="skill-card__fill" style="--level:82%"></span></div>
+          </div>
+        </div>
+
+        <h3 class="skills__subtitle reveal">常用工具与技术</h3>
+        <div class="tags reveal" style="transition-delay:.1s">
+          <span class="tag">Git</span><span class="tag">TypeScript</span><span class="tag">Next.js</span>
+          <span class="tag">Tailwind CSS</span><span class="tag">MySQL</span><span class="tag">MongoDB</span>
+          <span class="tag">Redis</span><span class="tag">GraphQL</span><span class="tag">CI/CD</span>
+          <span class="tag">Linux</span><span class="tag">Nginx</span><span class="tag">Jest</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 项目作品 ==================== -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__subtitle">Portfolio</p>
+          <h2 class="section__title">项目作品</h2>
+        </header>
+
+        <div class="projects__grid">
+          <!-- ✏️ 替换：项目图片、名称、描述、标签与链接 -->
+          <article class="project-card reveal">
+            <div class="project-card__media">
+              <img src="assets/project-1.svg" alt="智能任务管理工具项目插图" width="800" height="500" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">智能任务管理工具</h3>
+              <p class="project-card__desc">
+                一个基于 AI 的待办事项应用，支持自然语言创建任务、智能优先级排序与每日复盘报告。
+              </p>
+              <div class="project-card__tags"><span>React</span><span>Node.js</span><span>OpenAI API</span></div>
+              <div class="project-card__links">
+                <a class="project-link" href="https://github.com/zzz1280" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub 仓库
+                </a>
+                <a class="project-link" href="https://github.com/zzz1280" target="_blank" rel="noopener noreferrer">
+                  在线演示
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="transition-delay:.1s">
+            <div class="project-card__media">
+              <img src="assets/project-2.svg" alt="个人博客系统项目插图" width="800" height="500" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">个人博客系统</h3>
+              <p class="project-card__desc">
+                使用 Next.js 和 Markdown 构建的静态博客，支持暗色模式、全文检索与 RSS 订阅。
+              </p>
+              <div class="project-card__tags"><span>Next.js</span><span>Markdown</span><span>Vercel</span></div>
+              <div class="project-card__links">
+                <a class="project-link" href="https://github.com/zzz1280" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub 仓库
+                </a>
+                <a class="project-link" href="https://github.com/zzz1280" target="_blank" rel="noopener noreferrer">
+                  在线演示
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="transition-delay:.2s">
+            <div class="project-card__media">
+              <img src="assets/project-3.svg" alt="数据可视化仪表板项目插图" width="800" height="500" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">数据可视化仪表板</h3>
+              <p class="project-card__desc">
+                使用 D3.js 展示实时数据流，支持自定义图表、钻取分析与多维度联动筛选。
+              </p>
+              <div class="project-card__tags"><span>D3.js</span><span>WebSocket</span><span>Python</span></div>
+              <div class="project-card__links">
+                <a class="project-link" href="https://github.com/zzz1280" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub 仓库
+                </a>
+                <a class="project-link" href="https://github.com/zzz1280" target="_blank" rel="noopener noreferrer">
+                  在线演示
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 联系我 ==================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__subtitle">Contact</p>
+          <h2 class="section__title">联系我</h2>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <h3>让我们一起聊聊吧 🚀</h3>
+            <p>无论你是想交流技术、探讨合作机会，还是单纯打个招呼，都欢迎通过表单或社交渠道联系我。</p>
+
+            <ul class="contact__list">
+              <li>
+                <span class="contact__icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+                </span>
+                <div>
+                  <strong>邮箱</strong>
+                  <a href="mailto:alex.zhang@example.com">alex.zhang@example.com（✏️ 请替换）</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact__icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 1a5 5 0 0 0-5 5c0 3.6 5 9 5 9s5-5.4 5-9a5 5 0 0 0-5-5Zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+                </span>
+                <div>
+                  <strong>所在地</strong>
+                  <span>中国 · 上海（✏️ 请替换）</span>
+                </div>
+              </li>
+              <li>
+                <span class="contact__icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                </span>
+                <div>
+                  <strong>GitHub</strong>
+                  <a href="https://github.com/zzz1280" target="_blank" rel="noopener noreferrer">github.com/zzz1280（✏️ 请替换）</a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="contact__socials">
+              <a class="social-link" href="https://github.com/zzz1280" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              </a>
+              <a class="social-link" href="https://www.linkedin.com/in/zzz1280" target="_blank" rel="noopener noreferrer" aria-label="领英">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+              </a>
+              <a class="social-link" href="https://twitter.com/zzz1280" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg>
+              </a>
+              <a class="social-link" href="mailto:alex.zhang@example.com" aria-label="发送邮件">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- ✏️ 提示（仅给站点所有者看）：GitHub Pages 是静态托管，此表单默认为演示模式；
+               要真实收到邮件，请按 README「让表单真正收到邮件」一节接入 Formspree。 -->
+          <form class="contact-form reveal" id="contact-form" novalidate style="transition-delay:.12s">
+            <div class="form-field">
+              <label for="name">姓名 <span aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" placeholder="你的名字" autocomplete="name" required />
+              <p class="form-field__error">请输入您的姓名（至少 2 个字符）</p>
+            </div>
+            <div class="form-field">
+              <label for="email">邮箱 <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+              <p class="form-field__error">请输入有效的邮箱地址</p>
+            </div>
+            <div class="form-field">
+              <label for="message">消息 <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" placeholder="想和我聊点什么…" required></textarea>
+              <p class="form-field__error">请输入至少 10 个字符的留言</p>
+            </div>
+            <button class="btn btn--primary btn--full" type="submit">
+              发送消息
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 页脚 ==================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> 张伟 Alex Zhang · Built with ❤️ &amp; GitHub Pages</p>
+      <p class="footer__meta">
+        查看本站源码：
+        <a href="https://github.com/zzz1280/zzz1280.github.io" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
+      </p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="回到顶部">
+    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
