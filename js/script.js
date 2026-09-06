@@ -96,10 +96,10 @@
   const typeEl = document.getElementById('typing');
   if (typeEl) {
     const roles = [
-      '全栈开发工程师',
-      'React & Node.js 开发者',
-      'Python 爱好者',
-      '终身学习者',
+      '机械工程专业学生',
+      'Python / 机器学习学习者',
+      '全栈 Web 开发学习者',
+      '正在寻找实习机会',
     ];
 
     if (reduceMotion) {

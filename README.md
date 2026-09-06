@@ -1,4 +1,4 @@
-# 张伟 (Alex Zhang) 的个人主页
+# zzz1280 的个人主页
 
 基于 **GitHub Pages** 托管的现代化、响应式个人主页。
 纯原生 HTML / CSS / JavaScript 实现，**零依赖、零构建**，克隆即可运行。
