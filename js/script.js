@@ -267,4 +267,81 @@
   /* ---------- 8. 页脚年份自动更新 ---------- */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  /* ---------- 9. 邮箱防爬混淆（点击显示 / 一键复制） ---------- */
+  // 地址拆成碎片存储，网页源码里不会出现完整邮箱，爬虫正则抓不到
+  const MAIL_BOXES = [
+    { user: '3245314637', domain: ['qq', 'com'] },
+    { user: 'hzhu799', domain: ['gmail', 'com'] },
+  ];
+  const buildEmail = (box) => box.user + '@' + box.domain.join('.');
+
+  const copyText = async (text) => {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
+      }
+    } catch (err) {
+      // 剪贴板 API 不可用时走下面的降级方案
+    }
+    const helper = document.createElement('textarea');
+    helper.value = text;
+    helper.style.position = 'fixed';
+    helper.style.opacity = '0';
+    document.body.appendChild(helper);
+    helper.select();
+    let ok = false;
+    try {
+      ok = document.execCommand('copy');
+    } catch (err) {
+      ok = false;
+    }
+    helper.remove();
+    return ok;
+  };
+
+  // 信息流图标按钮（首页 / 联系区）：点击即复制邮箱
+  document.querySelectorAll('[data-email-copy]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const box = btn.getAttribute('data-email-copy') === 'gmail'
+        ? MAIL_BOXES[1]
+        : MAIL_BOXES[0];
+      const addr = buildEmail(box);
+      const ok = await copyText(addr);
+      showToast(ok ? '📧 邮箱已复制：' + addr : '复制失败，请通过 GitHub 联系我');
+    });
+  });
+
+  // 「点击显示邮箱」：显示两个地址并附带复制按钮
+  const emailGuard = document.getElementById('email-guard');
+  const revealBtn = emailGuard ? emailGuard.querySelector('.email-reveal') : null;
+  if (emailGuard && revealBtn) {
+    revealBtn.addEventListener('click', () => {
+      emailGuard.innerHTML = '';
+      MAIL_BOXES.forEach((box) => {
+        const addr = buildEmail(box);
+
+        const line = document.createElement('span');
+        line.className = 'email-line';
+
+        const link = document.createElement('a');
+        link.href = 'mailto:' + addr;
+        link.textContent = addr;
+
+        const copyBtn = document.createElement('button');
+        copyBtn.type = 'button';
+        copyBtn.className = 'copy-btn';
+        copyBtn.textContent = '复制';
+        copyBtn.addEventListener('click', async () => {
+          const ok = await copyText(addr);
+          showToast(ok ? '📧 邮箱已复制：' + addr : '复制失败，请手动选择复制');
+        });
+
+        line.appendChild(link);
+        line.appendChild(copyBtn);
+        emailGuard.appendChild(line);
+      });
+    });
+  }
 })();
