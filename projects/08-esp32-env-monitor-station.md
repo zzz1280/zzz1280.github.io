@@ -34,7 +34,7 @@
 ## 三、技术路线（分阶段）
 
 **技术选型**：ESP32 DevKitC（Arduino 框架 / C++）/ DHT11（起步）或 SHT30（进阶）/ SSD1306 OLED（I2C）/ 后端复用 01 的 Flask，新增传感器 API 与图表页。
-> 用 Arduino 框架而不是 MicroPython：简历上"嵌入式 C"更有分量，且和后续 10 号机械臂一脉相承。
+> 用 Arduino 框架而不是 MicroPython：简历上"嵌入式 C"更有分量，且和后续 10 号循迹小车、11 号机械臂一脉相承。
 
 - **阶段 0｜采购与接线图（1~2 天）**：Agent 给 BOM（约 30~40 元：ESP32 DevKitC、DHT11 模块、OLED、杜邦线、面包板）+ 接线表；我下单并按图接线，拍照给 Agent 检查。
 - **阶段 1｜点亮 OLED（1~2 天）**：Arduino IDE / PlatformIO 环境 → 跑通 SSD1306 显示示例 → 显示自定义文字。产出：屏幕亮了。
