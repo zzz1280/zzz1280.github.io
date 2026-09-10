@@ -1171,3 +1171,49 @@ button {
     transform: none;
   }
 }
+
+/* ---------- 15. Todo-Notes 界面预览画廊 ---------- */
+.shots {
+  margin-top: 52px;
+}
+
+.shots__title {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 26px;
+}
+
+.shots__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+}
+
+.shot {
+  margin: 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.shot:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(59, 130, 246, 0.55);
+}
+
+.shot img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+.shot figcaption {
+  padding: 12px 14px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  text-align: center;
+}
