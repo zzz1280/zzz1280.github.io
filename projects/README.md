@@ -19,7 +19,7 @@
 | 编号 | 项目 | 主线 | 状态 | 前置依赖 | 预计耗时 |
 | --- | --- | --- | --- | --- | --- |
 | 01 | [全栈待办 / 笔记应用](01-fullstack-notes-app.md) | Web 全栈（TS） | ✅ 已完成（[todo-notes](https://github.com/zzz1280/todo-notes)） | 无 | 已交付 |
-| 02 | [机械工程计算器 Web 版](02-mech-engineering-calculator.md) | 机械 × 代码 | 📋 未开始 | 无（可与 01 并行） | 2~3 周 |
+| 02 | [机械工程计算器 Web 版](02-mech-engineering-calculator.md) | 机械 × 代码 | 🚧 阶段 1 完成（[mech-engineering-calculator](https://github.com/zzz1280/mech-engineering-calculator)） | 无（可与 01 并行） | 剩余 2~3 周 |
 | 03 | [SolidWorks 参数化标准件生成器](03-solidworks-parametric-generator.md) | 机械 × 代码 | 📋 未开始 | Windows + SolidWorks 环境 | 2~3 周 |
 | 04 | [手写神经网络（NumPy）](04-handwritten-neural-network.md) | 机器学习 | 📋 未开始 | Python / 线性代数基础 | 2 周 |
 | 05 | [算法可视化网站](05-algorithm-visualizer.md) | 算法 × 前端 | 📋 未开始 | 无 | 2 周 |
