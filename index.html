@@ -265,17 +265,18 @@
             <div class="project-card__body">
               <div class="project-card__head">
                 <h3 class="project-card__title">机械工程计算器</h3>
-                <span class="project-card__status project-card__status--planned">📋 规划中</span>
+                <span class="project-card__status project-card__status--online">✅ 已完成</span>
               </div>
               <p class="project-card__desc">
-                把材料力学、机械设计里的高频计算（梁的挠度、螺栓组受力、轴承寿命选型）做成在线工具，
-                让专业课知识和编程第一次真正交叉——这也是我给自己定的下一个练手项目。
+                把材料力学与机械设计的高频计算（梁挠度、螺栓组、轴承寿命、公差配合）做成在线工具，
+                含挠度/弯矩分布图绘制，公式全覆盖手算测试——91 项单元测试，每一个数都能和教材例题对上。
+                本地即可运行，仓库附 Render 一键部署配置。
               </p>
-              <div class="project-card__tags"><span>Python</span><span>Matplotlib</span><span>Web</span></div>
+              <div class="project-card__tags"><span>Python</span><span>Flask</span><span>Matplotlib</span></div>
               <div class="project-card__links">
-                <a class="project-link" href="https://github.com/zzz1280" target="_blank" rel="noopener noreferrer">
+                <a class="project-link" href="https://github.com/zzz1280/mech-engineering-calculator" target="_blank" rel="noopener noreferrer">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-                  GitHub
+                  源码
                 </a>
               </div>
             </div>
@@ -297,6 +298,25 @@
             <figure class="shot">
               <img src="assets/todo-notes/todo-persistence.png" alt="退出重新登录后数据完整保留截图" width="1280" height="720" loading="lazy" />
               <figcaption>端到端测试收官：重新登录数据完整保留</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 机械工程计算器 界面预览（02 号项目交付截图） -->
+        <div class="shots reveal">
+          <h3 class="shots__title">机械工程计算器 · 界面预览</h3>
+          <div class="shots__grid">
+            <figure class="shot">
+              <img src="assets/mech-calc/02-beam-deflection.png" alt="梁挠度与弯矩计算页截图，含挠度弯矩分布图" loading="lazy" />
+              <figcaption>梁挠度计算：结果与手算一致，随算随出挠度/弯矩分布图</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/mech-calc/03-bolt-group.png" alt="螺栓组倾覆力矩计算页截图，含各螺栓载荷明细表" loading="lazy" />
+              <figcaption>螺栓组受力：四种工况，自动标出最危险螺栓</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/mech-calc/05-fits.png" alt="公差配合查询页截图，H7/g6 间隙配合结果" loading="lazy" />
+              <figcaption>公差配合：查国标表值而非公式近似，μm/mm 双单位</figcaption>
             </figure>
           </div>
         </div>
