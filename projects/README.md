@@ -20,7 +20,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 01 | [全栈待办 / 笔记应用](01-fullstack-notes-app.md) | Web 全栈（TS） | ✅ 已完成（[todo-notes](https://github.com/zzz1280/todo-notes)） | 无 | 已交付 |
 | 02 | [机械工程计算器 Web 版](02-mech-engineering-calculator.md) | 机械 × 代码 | ✅ 已完成（[mech-engineering-calculator](https://github.com/zzz1280/mech-engineering-calculator)） | 无 | 已交付 |
-| 03 | [SolidWorks 参数化标准件生成器](03-solidworks-parametric-generator.md) | 机械 × 代码 | 📋 未开始 | Windows + SolidWorks 环境 | 2~3 周 |
+| 03 | [对话式 SolidWorks 建模助手](03-solidworks-ai-assistant.md) | 机械 × LLM Agent | 📋 未开始 | SW 2025 ✓ 已核验；LLM API Key | 4~5 周（里程碑 A 独立可交付） |
 | 04 | [手写神经网络（NumPy）](04-handwritten-neural-network.md) | 机器学习 | 📋 未开始 | Python / 线性代数基础 | 2 周 |
 | 05 | [算法可视化网站](05-algorithm-visualizer.md) | 算法 × 前端 | 📋 未开始 | 无 | 2 周 |
 | 06 | [笔记应用 AI 增强](06-notes-ai-enhancement.md) | 机器学习 × 全栈 | 📋 未开始 | **01 完成后** | 1~2 周 |
@@ -30,11 +30,11 @@
 | 10 | [循迹避障小车](10-line-following-robot-car.md) | 嵌入式 | 📋 未开始 | 建议在 07 / 08 之后 | 2~3 周 |
 | 11 | [桌面机械臂 / 二轴云台](11-desktop-robot-arm.md) | 机械 × 嵌入式 × 软件 | 📋 未开始 | 07 / 08 完成后更稳 | 3~4 周 |
 
-**推荐主线**：02 / 03（机械 × 代码，可并行）→ 04 / 05（ML 原理与算法基础，穿插）→ 06（在已交付的 01 上迭代）→ 07 → 08（基于 01 后端）→ 09 → 10 → 11（收官）。
+**推荐主线**：03 里程碑 A 可先做（原参数化生成器，2 周即得一个 ✅）→ 04 / 05（ML 原理与算法基础，可穿插）→ 04 / 05（ML 原理与算法基础，穿插）→ 06（在已交付的 01 上迭代）→ 07 → 08（基于 01 后端）→ 09 → 10 → 11（收官）。
 
 **三条叙事线**（主页展示时按线组织最清晰）：
 
-- **机械 × 代码**：02 计算器（✅）→ 03 SW 二次开发 → 09 PCB 外壳 → 11 机械臂（结构侧）
+- **机械 × 代码**：02 计算器（✅）→ 03 对话式 SW 助手（机械 × LLM 旗舰）→ 09 PCB 外壳 → 11 机械臂（结构侧）
 - **软件 / 算法**：01 笔记应用（✅）→ 05 算法可视化 → 04 手写神经网络 → 06 AI 增强
 - **嵌入式 / 硬件**：07 PCB 名片 → 08 温湿度小站 → 10 循迹小车 → 11 机械臂（控制侧）
 
